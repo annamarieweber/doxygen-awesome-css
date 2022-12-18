@@ -99,3 +99,57 @@ html.dark-mode .bordered_image object[type="image/svg+xml"] /* doxygen 1.9.3 */ 
 .title_screenshot .caption {
     display: none;
 }
+
+html {
+    /* primary theme color. This will affect the entire websites color scheme: links, arrows, labels, ... */
+    --primary-color: #fb00ff;
+    --primary-dark-color: #7300f5;
+    --primary-light-color: #9f3eee;
+    --primary-lighter-color: #eacaf1;
+    --primary-lightest-color: #e9f1f8;
+
+    /* page base colors */
+    --page-background-color: rgb(39, 40, 41);
+    --page-foreground-color: #e2ebf5;
+    --page-secondary-foreground-color: #67727e;
+
+
+    --border-radius-large: 22px;
+    --border-radius-small: 9px;
+    --border-radius-medium: 14px;
+    --spacing-small: 8px;
+    --spacing-medium: 14px;
+    --spacing-large: 19px;
+
+    --top-height: 125px;
+
+    --side-nav-background: #324067;
+    --side-nav-foreground: #F1FDFF;
+    --header-foreground: var(--side-nav-foreground);
+    --searchbar-background: var(--side-nav-foreground);
+    --searchbar-border-radius: var(--border-radius-medium);
+    --header-background: var(--side-nav-background);
+    --header-foreground: var(--side-nav-foreground);
+
+    --toc-background: rgb(243, 240, 252);
+    --toc-foreground: var(--page-foreground-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not(.light-mode) {
+        --primary-color: #ff8400;
+        --primary-dark-color: #02b3ff;
+        --primary-light-color: #ff8200;
+        --page-foreground-color: #e2ebf5;
+        --page-secondary-foreground-color: #545d67;
+        --side-nav-foreground: #cecece;
+        --header-foreground: 
+
+    }
+}
+
+#projectname {
+    background: -webkit-linear-gradient(245deg, #02b3ff 30%,#ff8400 60%,#ff8400 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
